@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+        <title>Document</title>
+        <style>
+            :root {
+               --very-light-pink: #c7c7c7;
+               --text-input-field: #f7f7f7;
+               --hospital-green: #acd9b2;
+               --white: #ffffff;
+               --black: #000000;
+               --dark: #232830;
+               --sm: 14px;
+               --md: 16px;
+               --lg: 18px;
+            }
+            body {
+                margin: 0;
+                font-family: 'Quicksand', sans-serif;
+            }
+            .my-order {
+                width: 100%;
+                height: auto;
+                display: grid;
+                justify-content: center;
+            }
+            .title {
+                font-size: var(--lg);
+                margin-bottom: 40px;
+                color: var(--black);
+            }
+            .my-order-container {
+                display: grid;
+                grid-template-rows: auto 1fr auto;
+                width: 300px;
+            }
+            .my-order-content {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 16px;
+                align-items: center;
+                background-color: var(--text-input-field);
+                margin-bottom: 24px;
+                padding: 0 24px;
+                border-radius: 8px;
+            }
+            .my-order-content p:nth-child(1) {
+                display: flex;
+                flex-direction: column;
+            }
+            .my-order-content p span:nth-child(1) {
+                font-size: var(--md);
+                font-weight: bold;
+                color: var(--black);
+            }
+            .my-order-content p span:nth-child(2) {
+                color: var(--very-light-pink);
+                font-size: var(--sm);
+            }
+            .my-order-content p:nth-child(2) {
+                text-align: end;
+                font-size: var(--md);
+                color: var(--dark);
+                font-weight: bold;
+            }
+            .shopping-cart-item {
+                display: grid;
+                grid-template-columns: auto 1fr auto;
+                align-items: center;
+                gap: 16px;
+                margin-bottom: 16px;
+            }
+            .shopping-cart-item figure {
+                margin: 0;
+            }
+            .shopping-cart-item figure img {
+                width: 72px;
+                height: 72px;
+                border-radius: 16px;
+                object-fit: cover;
+            }
+            .shopping-cart-item p:nth-child(2) {
+                color: var(--very-light-pink);
+                font-size: var(--sm);
+            }
+            .shopping-cart-item p:nth-child(3) {
+                font-size: var(--md);
+                color: var(--dark);
+                font-weight: bold;
+                text-align: end;
+                margin-right: 24px;
+            }
+            @media (max-width: 640px) {
+                .title {
+                    display: none;
+                }
+                .my-order-container {
+                    margin-top: 24px;
+                }
+            }
+        </style>
+</head>
+<body>
+    <div class="my-order">
+        <div class="my-order-container">
+            <h1 class="title">My order</h1>
+
+            <div class="my-order-content">
+                <p>
+                    <span>02.08.2023</span>
+                    <span>6 articles</span>
+                </p>
+                <p>$560.00</p>
+            </div>
+            
+            <div class="shopping-cart">
+                <div class="shopping-cart-item">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1583227122027-d2d360c66d3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80" alt="bike">
+                    </figure>
+                    <p>Bike</p>
+                    <p>$200.00</p>
+                </div>
+
+                <div class="shopping-cart-item">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1583227122027-d2d360c66d3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80" alt="bike">
+                    </figure>
+                    <p>Bike</p>
+                    <p>$200.00</p>
+                </div>
+
+                <div class="shopping-cart-item">
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1583227122027-d2d360c66d3c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=988&q=80" alt="bike">
+                    </figure>
+                    <p>Bike</p>
+                    <p>$200.00</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
